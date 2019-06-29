@@ -6,8 +6,12 @@ for path in $(ls projects); do
     then
         echo "deploying $path"
 
+        cd "projects/$path"
+
         npm ci
-        npm run deploy -- -s $STAGE
+        npm run deploy -- -s $STAGE --conceal
+
+        cd $OLDPWD
     else 
         continue
     fi

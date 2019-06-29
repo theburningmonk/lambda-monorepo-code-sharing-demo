@@ -11,7 +11,6 @@ steps:
       AWS_SECRET_ACCESS_KEY:
         from_secret: AWS_SECRET_ACCESS_KEY
     commands:
-      - ls
       - ./build.sh
     when:
       event: push
