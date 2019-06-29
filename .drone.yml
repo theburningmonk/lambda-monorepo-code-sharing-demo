@@ -3,7 +3,7 @@ name: default
 
 steps:
   - name: deploy-all-dev
-    image: node:10.15-alpine
+    image: node:10.15
     environment:
       STAGE: dev
       AWS_ACCESS_KEY_ID:
@@ -11,6 +11,7 @@ steps:
       AWS_SECRET_ACCESS_KEY:
         from_secret: AWS_SECRET_ACCESS_KEY
     commands:
+      - ls
       - ./build.sh
     when:
       event: push
