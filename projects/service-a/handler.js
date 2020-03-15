@@ -1,5 +1,5 @@
-const { parse } = require('../../libraries/library-a/index')
-const { stringify } = require('../../libraries/library-b/index')
+const { parse } = require('libraries/library-a/index')
+const { stringify } = require('libraries/library-b/index')
 
 module.exports.hello = async (event) => {
   const json = stringify(event)
