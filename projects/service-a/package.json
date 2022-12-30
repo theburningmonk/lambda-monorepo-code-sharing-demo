@@ -5,7 +5,7 @@
   "main": "handler.js",
   "dependencies": {},
   "devDependencies": {
-    "serverless": "^1.46.1",
+    "serverless": "^1.83.3",
     "serverless-webpack": "^5.3.0",
     "webpack": "^4.32.2"
   },
